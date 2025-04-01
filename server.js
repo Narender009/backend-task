@@ -11,7 +11,7 @@ const app = express();
 
 
 app.use(cors({
-  origin: 'http://localhost:3000', // Allow frontend URL
+  origin: ['http://localhost:3000', 'https://frontend-task-gamma-eight.vercel.app'],
   methods: 'GET,POST,PUT,DELETE',
   allowedHeaders: 'Content-Type,Authorization'
 }));
